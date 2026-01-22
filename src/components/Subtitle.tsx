@@ -84,7 +84,7 @@ export const Subtitle: React.FC<SubtitleProps> = ({ text, character }) => {
       <div
         style={{
           position: "relative",
-          display: "inline-block",
+          display: "inline",
         }}
       >
         {/* 外側アウトライン */}
