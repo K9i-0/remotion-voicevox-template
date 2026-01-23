@@ -2,110 +2,145 @@
 
 ずんだもん＆めたんの掛け合い紹介動画を簡単に作成できるテンプレートです。
 
-**Claude Codeと一緒に使うと、セリフの作成から動画出力まで対話的に進められます。**
+![デフォルトの黒板風デザイン](https://img.shields.io/badge/デザイン-黒板風-2d5a3d)
+![解像度](https://img.shields.io/badge/解像度-1920x1080-blue)
+![フレームレート](https://img.shields.io/badge/FPS-30-green)
 
-## 必要なもの
+## 特徴
 
-1. **Node.js 18以上** - [ダウンロード](https://nodejs.org/)
-2. **VOICEVOX** - [ダウンロード](https://voicevox.hiroshiba.jp/) (無料の音声合成ソフト)
+- **対話的な動画作成** - Claude Codeと会話しながら動画を作成
+- **自動音声生成** - VOICEVOXで高品質な音声を自動生成
+- **口パクアニメーション** - キャラクターが自然に話しているように見える
+- **表情差分対応** - happy, surprised, thinking, sad などの表情切り替え
+- **カスタマイズ可能** - YAMLファイルでフォント、色、レイアウトを簡単変更
 
-## セットアップ
+---
+
+## クイックスタート
+
+### 1. 必要なもの
+
+| ソフト | 説明 |
+|--------|------|
+| [Node.js 18+](https://nodejs.org/) | JavaScript実行環境 |
+| [VOICEVOX](https://voicevox.hiroshiba.jp/) | 無料の音声合成ソフト |
+| [Claude Code](https://claude.ai/code) | 対話的に動画を作成（推奨） |
+
+### 2. セットアップ
 
 ```bash
-# 1. テンプレートをコピー
-cp -r remotion-voicevox-template my-video
+git clone https://github.com/nyanko3141592/remotion-voicevox-template.git my-video
 cd my-video
-
-# 2. 依存関係をインストール
 npm install
-
-# 3. VOICEVOXを起動しておく
 ```
 
-## 使い方（Claude Codeと一緒に）
+### 3. VOICEVOXを起動
 
-### Claude Codeで作業ディレクトリを開く
+VOICEVOXアプリを起動しておいてください。
+
+### 4. 動画を作成
 
 ```bash
-cd my-video
-claude
+claude  # Claude Codeを起動
 ```
 
-### Claudeに指示する
+Claude Codeに話しかけるだけ：
 
 ```
 「〇〇の紹介動画を作りたい」
 ```
 
-あとはClaudeが：
-- セリフを作成
-- 音声を生成
-- プレビュー確認
-- 動画出力
+---
 
-まで案内してくれます。
+## 使い方の流れ
 
-### よく使う指示
+```
+1. 「〇〇の紹介動画を作りたい」と伝える
+       ↓
+2. Claudeがセリフを作成
+       ↓
+3. 「音声生成して」
+       ↓
+4. 「プレビュー見せて」で確認
+       ↓
+5. 修正があれば指示
+       ↓
+6. 「動画出力して」で完成！
+```
+
+---
+
+## よく使う指示
 
 | やりたいこと | 指示の例 |
 |-------------|---------|
 | 新規作成 | 「〇〇の紹介動画を作って」 |
 | セリフ修正 | 「ID 3のセリフを変更して」 |
+| 発音修正 | 「GitHubをギットハブって発音して」 |
 | 音声生成 | 「音声を生成して」 |
-| プレビュー | 「プレビューを見たい」 |
+| プレビュー | 「プレビュー見せて」 |
 | 動画出力 | 「動画を出力して」 |
-| 発音修正 | 「〇〇の発音がおかしい」 |
 
-## 手動で使う場合
+---
 
-### 1. セリフを編集
+## コマンド一覧
 
-`src/data/script.ts` を編集してセリフを追加。
+| コマンド | 説明 |
+|---------|------|
+| `npm start` | プレビュー（http://localhost:3000） |
+| `npm run voices` | 音声生成 |
+| `npm run build` | 動画出力（out/video.mp4） |
 
-### 2. 音声生成
-
-```bash
-npm run voices
-```
-
-### 3. プレビュー
-
-```bash
-npm start
-```
-
-http://localhost:3000 でプレビュー確認。
-
-### 4. 動画出力
-
-```bash
-npm run build
-```
-
-`out/video.mp4` に出力されます。
+---
 
 ## キャラクター画像
 
-口パクアニメーション用に画像を配置：
+`video-settings.yaml`で`useImages: true`に設定し、画像を配置：
 
 ```
 public/images/
 ├── zundamon/
-│   ├── mouth_open.png
-│   └── mouth_close.png
+│   ├── mouth_open.png   # 口開き（必須）
+│   ├── mouth_close.png  # 口閉じ（必須）
+│   ├── happy_open.png   # 表情差分（任意）
+│   └── ...
 └── metan/
-    ├── mouth_open.png
-    └── mouth_close.png
+    └── ...
 ```
 
 画像がない場合はプレースホルダーが表示されます。
 
+---
+
+## カスタマイズ
+
+`video-settings.yaml`でスタイルを変更できます：
+
+```yaml
+font:
+  family: "Noto Sans JP"
+  size: 48
+  color: "#ffffff"
+
+character:
+  height: 367
+  useImages: true
+
+colors:
+  zundamon: "#228B22"
+  metan: "#FF1493"
+```
+
+---
+
 ## 詳しい使い方
 
-詳細は [CLAUDE.md](./CLAUDE.md) を参照してください。
+詳細は **[CLAUDE.md](./CLAUDE.md)** を参照してください。
 
-- Claude Codeでの詳しい使い方
-- セリフデータの書き方
-- 英語の発音問題の対処法
-- シーン管理
-- トラブルシューティング
+---
+
+## ライセンス
+
+MIT License
+
+キャラクター（ずんだもん・四国めたん）の利用規約は各公式サイトをご確認ください。
