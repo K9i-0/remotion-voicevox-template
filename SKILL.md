@@ -197,11 +197,28 @@ export const bgmConfig: BGMConfig = {
 ```typescript
 {
   se: {
-    src: "chime.mp3",  // public/se/
+    src: "point.mp3",  // public/se/
     volume: 0.8,
   },
 }
 ```
+
+### 効果音の使い方ガイドライン
+
+- 効果音は**ここぞというところ**で使用（多用しない）
+- 1動画で5〜10個程度が目安
+- 重要なポイントや感情の変化で使う
+
+### おすすめ効果音（効果音ラボから入手）
+
+| 用途 | ファイル名 | 効果音ラボでの名前 |
+|------|-----------|-------------------|
+| ポイント強調 | `point.mp3` | 「ポップアップ1」 |
+| 正解・成功 | `correct.mp3` | 「正解2」 |
+| 驚き | `surprise.mp3` | 「びっくり」 |
+| 注目 | `attention.mp3` | 「シャキーン」 |
+
+詳細は `docs/sound-effects-guide.md` を参照。
 
 ---
 
