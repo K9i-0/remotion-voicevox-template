@@ -14,19 +14,27 @@ interface SubtitleProps {
 
 // BudouXで分割したテキストをレンダリングするコンポーネント
 const BudouXText = ({ text }: { text: string }) => {
-  const segments = useMemo(() => parser.parse(text), [text]);
+  // まず\nで行分割し、各行をBudouXで処理
+  const lines = useMemo(() => {
+    return text.split("\n").map((line) => parser.parse(line));
+  }, [text]);
 
   return (
     <>
-      {segments.map((segment, index) => (
-        <span
-          key={index}
-          style={{
-            display: "inline-block",
-            whiteSpace: "nowrap",
-          }}
-        >
-          {segment}
+      {lines.map((segments, lineIndex) => (
+        <span key={lineIndex}>
+          {segments.map((segment, index) => (
+            <span
+              key={index}
+              style={{
+                display: "inline-block",
+                whiteSpace: "nowrap",
+              }}
+            >
+              {segment}
+            </span>
+          ))}
+          {lineIndex < lines.length - 1 && <br />}
         </span>
       ))}
     </>
