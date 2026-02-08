@@ -62,8 +62,8 @@ export const scenes: SceneInfo[] = [
 export const scriptData: ScriptLine[] = [
   {
     "id": 1,
-    "character": "zundamon",
-    "text": "ずんだもんなのだ！今日はスペシャルゲストに来てもらったのだ！",
+    "character": "yametaro",
+    "text": "どうも、やめ太郎やで！今日はスペシャルゲストに来てもらったやで！",
     "scene": 1,
     "pauseAfter": 10,
     "visual": {
@@ -73,17 +73,17 @@ export const scriptData: ScriptLine[] = [
       "color": "#ffffff",
       "animation": "zoomIn"
     },
-    "voiceFile": "01_zundamon.wav",
-    "durationInFrames": 156
+    "voiceFile": "01_yametaro.wav",
+    "durationInFrames": 148
   },
   {
     "id": 2,
-    "character": "zundamon",
-    "text": "二日酔い系テックリード、そば屋なのだ！",
+    "character": "yametaro",
+    "text": "二日酔い系テックリード、そば屋や！",
     "scene": 1,
     "pauseAfter": 10,
-    "voiceFile": "02_zundamon.wav",
-    "durationInFrames": 119
+    "voiceFile": "02_yametaro.wav",
+    "durationInFrames": 91
   },
   {
     "id": 3,
@@ -96,17 +96,17 @@ export const scriptData: ScriptLine[] = [
   },
   {
     "id": 4,
-    "character": "zundamon",
-    "text": "いきなりカンパーイなのだ！まあ、それがそば屋なのだ。",
+    "character": "yametaro",
+    "text": "いきなりカンパーイかいな！まあ、それがそば屋やからな。",
     "scene": 1,
     "pauseAfter": 15,
-    "voiceFile": "04_zundamon.wav",
-    "durationInFrames": 160
+    "voiceFile": "04_yametaro.wav",
+    "durationInFrames": 140
   },
   {
     "id": 5,
-    "character": "zundamon",
-    "text": "そば屋はアクシデンチュア株式会社のテックリードなのだ！",
+    "character": "yametaro",
+    "text": "そば屋はアクシデンチュア株式会社のテックリードやねん！",
     "scene": 2,
     "pauseAfter": 10,
     "visual": {
@@ -114,8 +114,8 @@ export const scriptData: ScriptLine[] = [
       "src": "sobaya.jpg",
       "animation": "zoomIn"
     },
-    "voiceFile": "05_zundamon.wav",
-    "durationInFrames": 149
+    "voiceFile": "05_yametaro.wav",
+    "durationInFrames": 114
   },
   {
     "id": 6,
@@ -128,12 +128,12 @@ export const scriptData: ScriptLine[] = [
   },
   {
     "id": 7,
-    "character": "zundamon",
-    "text": "テックリードなのに、なぜか窓際族なのだ！",
+    "character": "yametaro",
+    "text": "テックリードやのに、なぜか窓際族やねん！",
     "scene": 2,
     "pauseAfter": 10,
-    "voiceFile": "07_zundamon.wav",
-    "durationInFrames": 135
+    "voiceFile": "07_yametaro.wav",
+    "durationInFrames": 106
   },
   {
     "id": 8,
@@ -146,12 +146,12 @@ export const scriptData: ScriptLine[] = [
   },
   {
     "id": 9,
-    "character": "zundamon",
-    "text": "いや、聞いてるのだ？窓際族なのだ！大丈夫なのだ？",
+    "character": "yametaro",
+    "text": "ちょっと、聞いてるか？窓際族やで！大丈夫かいな？",
     "scene": 2,
     "pauseAfter": 10,
-    "voiceFile": "09_zundamon.wav",
-    "durationInFrames": 197
+    "voiceFile": "09_yametaro.wav",
+    "durationInFrames": 166
   },
   {
     "id": 10,
@@ -164,18 +164,18 @@ export const scriptData: ScriptLine[] = [
   },
   {
     "id": 11,
-    "character": "zundamon",
-    "text": "カンパーイしか言わないのだ！でも技術力はピカイチなのだ！",
+    "character": "yametaro",
+    "text": "カンパーイしか言わへんやんけ！でも技術力はメッチャすごいねん！",
     "scene": 2,
     "pauseAfter": 10,
     "emotion": "happy",
-    "voiceFile": "11_zundamon.wav",
-    "durationInFrames": 169
+    "voiceFile": "11_yametaro.wav",
+    "durationInFrames": 137
   },
   {
     "id": 12,
-    "character": "zundamon",
-    "text": "テックリードとしてバリバリ働くはずが、二日酔いで毎朝遅刻するのだ！",
+    "character": "yametaro",
+    "text": "テックリードとしてバリバリ働くはずが、二日酔いで毎朝遅刻してるらしいわ。",
     "scene": 2,
     "pauseAfter": 10,
     "visual": {
@@ -185,8 +185,8 @@ export const scriptData: ScriptLine[] = [
       "color": "#ff4444",
       "animation": "bounce"
     },
-    "voiceFile": "12_zundamon.wav",
-    "durationInFrames": 206
+    "voiceFile": "12_yametaro.wav",
+    "durationInFrames": 174
   },
   {
     "id": 13,
@@ -199,12 +199,12 @@ export const scriptData: ScriptLine[] = [
   },
   {
     "id": 14,
-    "character": "zundamon",
-    "text": "だから窓際に追いやられてしまったのだ！自業自得なのだ！",
+    "character": "yametaro",
+    "text": "せやから窓際に追いやられてもうたんや！自業自得やな！",
     "scene": 2,
     "pauseAfter": 10,
-    "voiceFile": "14_zundamon.wav",
-    "durationInFrames": 167
+    "voiceFile": "14_yametaro.wav",
+    "durationInFrames": 133
   },
   {
     "id": 15,
@@ -217,18 +217,18 @@ export const scriptData: ScriptLine[] = [
   },
   {
     "id": 16,
-    "character": "zundamon",
-    "text": "反省してないのだ！でもそこが、そば屋のいいところなのだ！",
+    "character": "yametaro",
+    "text": "反省してへんな！でもまあ、そこがそば屋のええところやな。",
     "scene": 2,
     "pauseAfter": 15,
     "emotion": "happy",
-    "voiceFile": "16_zundamon.wav",
-    "durationInFrames": 172
+    "voiceFile": "16_yametaro.wav",
+    "durationInFrames": 146
   },
   {
     "id": 17,
-    "character": "zundamon",
-    "text": "というわけで、窓際から世界を変えるテックリード、そば屋の紹介だったのだ！",
+    "character": "yametaro",
+    "text": "というわけで、窓際から世界を変えるテックリード、そば屋の紹介やったで！",
     "scene": 3,
     "pauseAfter": 10,
     "visual": {
@@ -238,17 +238,17 @@ export const scriptData: ScriptLine[] = [
       "color": "#ffffff",
       "animation": "bounce"
     },
-    "voiceFile": "17_zundamon.wav",
-    "durationInFrames": 228
+    "voiceFile": "17_yametaro.wav",
+    "durationInFrames": 181
   },
   {
     "id": 18,
-    "character": "zundamon",
-    "text": "最後にそば屋から一言あるのだ！",
+    "character": "yametaro",
+    "text": "最後にそば屋から一言もらおか！",
     "scene": 3,
     "pauseAfter": 10,
-    "voiceFile": "18_zundamon.wav",
-    "durationInFrames": 98
+    "voiceFile": "18_yametaro.wav",
+    "durationInFrames": 74
   },
   {
     "id": 19,
@@ -261,13 +261,13 @@ export const scriptData: ScriptLine[] = [
   },
   {
     "id": 20,
-    "character": "zundamon",
-    "text": "知ってたのだ！バイバイなのだ〜！",
+    "character": "yametaro",
+    "text": "知ってたわ！ほな、バイバイやで〜！",
     "scene": 3,
     "pauseAfter": 15,
     "emotion": "happy",
-    "voiceFile": "20_zundamon.wav",
-    "durationInFrames": 90
+    "voiceFile": "20_yametaro.wav",
+    "durationInFrames": 91
   }
 ];
 

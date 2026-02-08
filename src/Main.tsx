@@ -139,9 +139,9 @@ export const Main: React.FC = () => {
         emotion={currentLine?.character === "sobaya" ? currentLine.emotion : "normal"}
       />
       <Character
-        characterId="zundamon"
-        isSpeaking={isSpeaking && currentLine?.character === "zundamon"}
-        emotion={currentLine?.character === "zundamon" ? currentLine.emotion : "normal"}
+        characterId="yametaro"
+        isSpeaking={isSpeaking && currentLine?.character === "yametaro"}
+        emotion={currentLine?.character === "yametaro" ? currentLine.emotion : "normal"}
       />
 
       {/* 字幕 */}
