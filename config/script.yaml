@@ -1,32 +1,149 @@
 # スクリプトデータ
-# セリフを編集後、npm run sync-script で反映
+# 二日酔い系テックリードそば屋の紹介
 
+# === シーン1: オープニング ===
 - id: 1
   character: zundamon
-  text: ずんだもんなのだ！
+  text: ずんだもんなのだ！今日はある人物を紹介するのだ！
   scene: 1
-  pauseAfter: 15
+  pauseAfter: 10
   visual:
     type: text
-    text: "Remotion × VOICEVOX\nテンプレート"
+    text: "二日酔い系テックリード\nそば屋"
     fontSize: 80
     color: "#ffffff"
     animation: zoomIn
 
 - id: 2
   character: metan
-  text: 四国めたんです。
+  text: 四国めたんよ。誰を紹介するの？
   scene: 1
-  pauseAfter: 15
+  pauseAfter: 10
 
 - id: 3
   character: zundamon
-  text: このテンプレートで紹介動画が作れるのだ！
+  text: 二日酔い系テックリード、そば屋を紹介するのだ！
   scene: 1
   pauseAfter: 10
 
 - id: 4
   character: metan
-  text: よろしくね。
+  text: 二日酔い系ってなにかしら？気になるわね。
   scene: 1
-  pauseAfter: 30
+  pauseAfter: 15
+
+# === シーン2: メインコンテンツ ===
+- id: 5
+  character: zundamon
+  text: じゃーん！この人がそば屋なのだ！
+  scene: 2
+  pauseAfter: 15
+  visual:
+    type: image
+    src: sobaya.jpg
+    animation: zoomIn
+
+- id: 6
+  character: metan
+  text: すごいインパクトのあるお面ね。ビールも持ってるわ。
+  scene: 2
+  pauseAfter: 10
+  emotion: surprised
+
+- id: 7
+  character: zundamon
+  text: そば屋はアクシデンチュア株式会社のテックリードなのだ！
+  scene: 2
+  pauseAfter: 10
+
+- id: 8
+  character: metan
+  text: テックリード！すごい肩書きじゃない。
+  scene: 2
+  pauseAfter: 10
+
+- id: 9
+  character: zundamon
+  text: でも実はテックリードなのに窓際族なのだ！
+  scene: 2
+  pauseAfter: 10
+  emotion: happy
+
+- id: 10
+  character: metan
+  text: え、テックリードなのに窓際族なの？どういうことかしら。
+  scene: 2
+  pauseAfter: 10
+  emotion: surprised
+
+- id: 11
+  character: zundamon
+  text: テックリードとしてバリバリ働くはずが、なぜか窓際に追いやられてしまったのだ！
+  scene: 2
+  pauseAfter: 10
+
+- id: 12
+  character: metan
+  text: 二日酔いが原因なんじゃないかしら。
+  scene: 2
+  pauseAfter: 10
+  emotion: thinking
+
+- id: 13
+  character: zundamon
+  text: それは否定できないのだ！
+  scene: 2
+  pauseAfter: 10
+  emotion: happy
+
+- id: 14
+  character: metan
+  text: でもテックリードの実力はあるのよね？
+  scene: 2
+  pauseAfter: 10
+
+- id: 15
+  character: zundamon
+  text: もちろんなのだ！技術力はピカイチなのだ！ただ、朝が弱いだけなのだ！
+  scene: 2
+  pauseAfter: 15
+  emotion: happy
+
+# === シーン3: エンディング ===
+- id: 16
+  character: metan
+  text: 窓際でも技術力で会社を支えてるのね。
+  scene: 3
+  pauseAfter: 10
+
+- id: 17
+  character: zundamon
+  text: そうなのだ！窓際から世界を変えるテックリード、それがそば屋なのだ！
+  scene: 3
+  pauseAfter: 10
+  emotion: happy
+  visual:
+    type: text
+    text: "窓際から世界を変える\nテックリード"
+    fontSize: 72
+    color: "#ffffff"
+    animation: bounce
+
+- id: 18
+  character: metan
+  text: 応援してるわ。二日酔いには気をつけてね。
+  scene: 3
+  pauseAfter: 10
+
+- id: 19
+  character: metan
+  text: バイバイ〜！
+  scene: 3
+  pauseAfter: 0
+
+- id: 20
+  character: zundamon
+  text: バイバイなのだ〜！
+  scene: 3
+  pauseAfter: 60
+  emotion: happy
