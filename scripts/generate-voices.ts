@@ -128,6 +128,7 @@ async function main() {
   const characters: Map<string, number> = new Map([
     ["zundamon", 3],
     ["metan", 2],
+    ["sobaya", 82],
   ]);
 
   // script.tsを読み込んでパース

@@ -38,7 +38,8 @@ export const SETTINGS = {
     "background": "#ffffff",
     "text": "#ffffff",
     "zundamon": "#228B22",
-    "metan": "#FF1493"
+    "metan": "#FF1493",
+    "sobaya": "#8B0000"
   }
 } as const;
 
@@ -49,6 +50,10 @@ export const AVAILABLE_IMAGES: Record<string, string[]> = {
     "mouth_open.png"
   ],
   "metan": [
+    "mouth_close.png",
+    "mouth_open.png"
+  ],
+  "sobaya": [
     "mouth_close.png",
     "mouth_open.png"
   ],

@@ -20,10 +20,11 @@ export const COLORS = {
   pink: "#ec4899",
   zundamon: "#228B22",        // フォレストグリーン（暗め）
   metan: "#FF1493",           // ディープピンク
+  sobaya: "#8B0000",          // ダークレッド
 };
 
 // キャラクター定義
-export type CharacterId = "zundamon" | "metan";
+export type CharacterId = "zundamon" | "metan" | "sobaya";
 
 export interface CharacterConfig {
   id: CharacterId;
@@ -66,12 +67,25 @@ export const DEFAULT_CHARACTERS: CharacterConfig[] = [
     },
     flipX: false,
   },
+  {
+    id: "sobaya",
+    name: "そば屋",
+    voicevoxSpeakerId: 82,
+    position: "left",
+    color: COLORS.sobaya,
+    images: {
+      mouthOpen: "images/sobaya/mouth_open.png",
+      mouthClose: "images/sobaya/mouth_close.png",
+    },
+    flipX: false,
+  },
 ];
 
 // キャラクターIDからspeakerIdを取得するマップ
 export const characterSpeakerMap: Record<CharacterId, number> = {
   zundamon: 3,
   metan: 2,
+  sobaya: 82,
 };
 
 // シーン背景タイプ

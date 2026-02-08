@@ -134,9 +134,9 @@ export const Main: React.FC = () => {
 
       {/* キャラクター */}
       <Character
-        characterId="metan"
-        isSpeaking={isSpeaking && currentLine?.character === "metan"}
-        emotion={currentLine?.character === "metan" ? currentLine.emotion : "normal"}
+        characterId="sobaya"
+        isSpeaking={isSpeaking && currentLine?.character === "sobaya"}
+        emotion={currentLine?.character === "sobaya" ? currentLine.emotion : "normal"}
       />
       <Character
         characterId="zundamon"
