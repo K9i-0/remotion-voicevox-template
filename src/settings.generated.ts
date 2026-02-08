@@ -39,7 +39,8 @@ export const SETTINGS = {
     "text": "#ffffff",
     "zundamon": "#228B22",
     "metan": "#FF1493",
-    "sobaya": "#8B0000"
+    "sobaya": "#8B0000",
+    "yametaro": "#4169E1"
   }
 } as const;
 
@@ -54,6 +55,10 @@ export const AVAILABLE_IMAGES: Record<string, string[]> = {
     "mouth_open.png"
   ],
   "sobaya": [
+    "mouth_close.png",
+    "mouth_open.png"
+  ],
+  "yametaro": [
     "mouth_close.png",
     "mouth_open.png"
   ],

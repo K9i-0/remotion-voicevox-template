@@ -21,10 +21,11 @@ export const COLORS = {
   zundamon: "#228B22",        // フォレストグリーン（暗め）
   metan: "#FF1493",           // ディープピンク
   sobaya: "#8B0000",          // ダークレッド
+  yametaro: "#4169E1",        // ロイヤルブルー
 };
 
 // キャラクター定義
-export type CharacterId = "zundamon" | "metan" | "sobaya";
+export type CharacterId = "zundamon" | "metan" | "sobaya" | "yametaro";
 
 export interface CharacterConfig {
   id: CharacterId;
@@ -79,6 +80,18 @@ export const DEFAULT_CHARACTERS: CharacterConfig[] = [
     },
     flipX: false,
   },
+  {
+    id: "yametaro",
+    name: "やめ太郎",
+    voicevoxSpeakerId: 11,
+    position: "right",
+    color: COLORS.yametaro,
+    images: {
+      mouthOpen: "images/yametaro/mouth_open.png",
+      mouthClose: "images/yametaro/mouth_close.png",
+    },
+    flipX: false,
+  },
 ];
 
 // キャラクターIDからspeakerIdを取得するマップ
@@ -86,6 +99,7 @@ export const characterSpeakerMap: Record<CharacterId, number> = {
   zundamon: 3,
   metan: 2,
   sobaya: 82,
+  yametaro: 11,
 };
 
 // シーン背景タイプ

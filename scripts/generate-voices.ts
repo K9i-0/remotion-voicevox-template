@@ -129,6 +129,7 @@ async function main() {
     ["zundamon", 3],
     ["metan", 2],
     ["sobaya", 82],
+    ["yametaro", 11],
   ]);
 
   // script.tsを読み込んでパース
