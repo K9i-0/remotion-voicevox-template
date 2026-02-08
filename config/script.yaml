@@ -146,5 +146,5 @@
   character: zundamon
   text: 知ってたのだ！バイバイなのだ〜！
   scene: 3
-  pauseAfter: 60
+  pauseAfter: 15
   emotion: happy

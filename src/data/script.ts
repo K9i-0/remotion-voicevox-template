@@ -264,7 +264,7 @@ export const scriptData: ScriptLine[] = [
     "character": "zundamon",
     "text": "知ってたのだ！バイバイなのだ〜！",
     "scene": 3,
-    "pauseAfter": 60,
+    "pauseAfter": 15,
     "emotion": "happy",
     "voiceFile": "20_zundamon.wav",
     "durationInFrames": 90
